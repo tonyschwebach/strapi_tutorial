@@ -7,4 +7,6 @@ module.exports = ({ env }) => ({
   dirs: {
     public: env("MEDIA_DIR", "./public"),
   },
+  url: env("PUBLIC_URL", ""),
+  proxy: env.bool("IS_PROXIED", false),
 });
